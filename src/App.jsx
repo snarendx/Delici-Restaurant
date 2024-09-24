@@ -13,10 +13,11 @@ import WatchOurVideo from "./Components/Homepage/WatchOurVideo";
 import SpecialOffer from "./Components/Homepage/SpecialOffer";
 import UpcomingEvent from "./Components/Homepage/UpcomingEvent";
 import Footer from "./Components/Homepage/Footer";
+import FindATable from "./Components/Homepage/FindATable";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative flex flex-col overflow-hidden">
       <Header />
       <MenuSection />
       <OurStory />
@@ -31,6 +32,7 @@ function App() {
       <WatchOurVideo />
       <UpcomingEvent />
       <Footer />
+      <FindATable />
     </div>
   );
 }

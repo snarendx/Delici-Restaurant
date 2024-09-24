@@ -5,7 +5,7 @@ const OurStory = () => {
     <div className="min-h-screen bg-black flex text-center items-center justify-center p-8">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 text-white items-center justify-center">
         <div className="flex flex-col justify-center items-center md:items-start space-y-4">
-          <p className="text-yellow-500 font-semibold tracking-widest text-center md:text-left">
+          <p className="text-[#E4C590] font-semibold tracking-widest text-center md:text-left">
             OUR STORY
             <div className="w-32 mx-auto flex mt-4 items-center justify-center">
               <svg
@@ -86,11 +86,11 @@ const OurStory = () => {
           <p className="font-semibold text-center md:text-left">
             Book Through Call
           </p>
-          <p className="relative group text-yellow-500 text-2xl cursor-pointer text-center md:text-left">
+          <p className="relative group text-[#E4C590] text-2xl cursor-pointer text-center md:text-left">
             <span className="relative inline-block">
               +80 (400) 123 4567
-              <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-yellow-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-              <span className="absolute left-0 right-0 bottom-[-6px] h-0.5 bg-yellow-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+              <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#E4C590] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+              <span className="absolute left-0 right-0 bottom-[-6px] h-0.5 bg-[#E4C590] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </span>
           </p>
           <button className="relative mt-12 inline-block px-6 py-2 md:px-10 md:py-2 text-xs md:text-lg text-[#E4C590] hover:text-black transition-all duration-500 ease-in border-2 border-[#E4C590] rounded-none shadow-[inset_0_0_0_0_#E4C590] hover:shadow-[inset_0_-100px_0_0_#E4C590] active:scale-90">
@@ -112,7 +112,7 @@ const OurStory = () => {
             />
           </div>
           <div className="absolute top-0 right-0 transform translate-x-5">
-            <div className="w-24 h-24 bg-yellow-500 rounded-full flex items-center justify-center text-black">
+            <div className="w-24 h-24 bg-[#E4C590] rounded-full flex items-center justify-center text-black">
               <p className="text-center font-semibold">Since 1950</p>
             </div>
           </div>

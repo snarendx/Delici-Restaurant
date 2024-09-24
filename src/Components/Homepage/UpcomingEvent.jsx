@@ -5,13 +5,13 @@ const events = [
     date: "15/09/2022",
     title: "FOOD, FLAVOUR",
     description: "Flavour so good you’ll try to eat with your eyes.",
-    image: "Image1.jpg",
+    image: "FoodFlavor.jpg",
   },
   {
     date: "08/09/2022",
     title: "HEALTHY FOOD",
     description: "Flavour so good you’ll try to eat with your eyes.",
-    image: "Image1.jpg",
+    image: "HealthyFood.jpg",
   },
   {
     date: "03/09/2022",
@@ -33,7 +33,7 @@ const EventCard = ({ date, title, description, image }) => (
       {date}
     </div>
 
-    <div className="absolute inset-0 bg-yellow-500 opacity-0 group-hover:opacity-25 transition-opacity duration-500"></div>
+    <div className="absolute inset-0 bg-[#E4C590] opacity-0 group-hover:opacity-25 transition-opacity duration-500"></div>
 
     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 z-10">
       <h3 className="text-white font-bold">{title}</h3>
@@ -46,7 +46,7 @@ const UpcomingEvent = () => {
   return (
     <div className="bg-black text-white py-10">
       <div className="text-center">
-        <p className="text-yellow-500 tracking-widest">RECENT UPDATES</p>
+        <p className="text-[#E4C590] tracking-widest">RECENT UPDATES</p>
         <h2 className="text-4xl font-bold">Upcoming Event</h2>
       </div>
 
@@ -58,7 +58,7 @@ const UpcomingEvent = () => {
 
       <div className="text-center mt-8">
         <button className="relative mt-12 inline-block px-6 py-2 md:px-10 md:py-2 text-xs md:text-lg text-[#E4C590] hover:text-black transition-all duration-500 ease-in border-2 border-[#E4C590] rounded-none shadow-[inset_0_0_0_0_#E4C590] hover:shadow-[inset_0_-100px_0_0_#E4C590] active:scale-90">
-         VIEW OUR BLOG
+          VIEW OUR BLOG
         </button>
       </div>
     </div>

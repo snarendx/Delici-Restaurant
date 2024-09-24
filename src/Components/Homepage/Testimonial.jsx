@@ -5,10 +5,10 @@ import { Carousel } from "react-responsive-carousel";
 const Testimonial = () => {
   return (
     <section
-      className="relative bg-cover bg-center text-white h-screen"
+      className="relative  bg-cover  bg-center text-white h-screen"
       style={{ backgroundImage: 'url("/ThreeGirls.jpg")' }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
       <div className="relative z-10 flex gap-10 flex-col items-center justify-center h-full px-6 text-center space-y-10">
         <Carousel

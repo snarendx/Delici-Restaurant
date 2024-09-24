@@ -1,24 +1,48 @@
-import React, { useState } from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaBars } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaBars } from "react-icons/fa";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="relative bg-black bg-opacity-50 min-h-screen flex flex-col">
+    <div className="relative bg-black bg-opacity-20 min-h-screen flex flex-col">
       <video
-        className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
+        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
         autoPlay
         loop
         muted
+        style={{
+          transform: `translateY(${scrollPosition * 0.5}px)`,
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
       >
         <source src="/FoodVideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
       <div>
         <Navbar />
       </div>
+
       <header className="bg-black bg-opacity-50 flex justify-between items-center h-12 md:h-16 px-4 md:px-6 relative z-10">
         <div
           className="text-white cursor-pointer"
@@ -32,10 +56,11 @@ const Header = () => {
             <img src="/delici.png" alt="Delici Logo" className="h-8 md:h-12" />
           </div>
         </div>
-
-        <button className="relative inline-block px-6 py-2 md:px-10 md:py-2 text-xs md:text-lg bg-[#E4C590] text-black hover:text-white transition-all duration-500 ease-in border-2 border-[#E4C590] rounded-none shadow-[inset_0_0_0_0_#E4C590] hover:shadow-[inset_0_-100px_0_0_#000000] active:scale-90">
-          FIND A TABLE
-        </button>
+        <Link to={"/Find-ATable"}>
+          <button className="relative inline-block px-6 py-2 md:px-10 md:py-2 text-xs md:text-lg bg-[#E4C590] text-black hover:text-white transition-all duration-500 ease-in border-2 border-[#E4C590] rounded-none shadow-[inset_0_0_0_0_#E4C590] hover:shadow-[inset_0_-100px_0_0_#000000] active:scale-90">
+            FIND A TABLE
+          </button>
+        </Link>
 
         {isSidebarOpen && (
           <div className="absolute top-0 left-0 w-64 h-screen bg-black bg-opacity-80"></div>
@@ -47,7 +72,7 @@ const Header = () => {
           <div className="relative">
             <p className="text-xs md:text-sm uppercase text-[#E4C590] tracking-widest mb-28">
               Delightful Experience
-              <div className="w-32 mx-auto flex  mt-4 items-center justify-center">
+              <div className="w-32 mx-auto flex mt-4 items-center justify-center">
                 <svg
                   version="1.1"
                   id="Layer_1"
@@ -115,7 +140,6 @@ const Header = () => {
                 </svg>
               </div>
             </p>
-            
 
             <h1 className="text-4xl md:text-7xl font-bold mt-16">
               Flavors Inspired by <br />
@@ -124,7 +148,7 @@ const Header = () => {
             <p className="text-sm md:text-lg mt-4">
               Come with family & feel the joy of mouthwatering food
             </p>
-            <button className="relative mt-12 inline-block px-6 py-2 md:px-10 md:py-2 text-xs md:text-lg  text-[#E4C590] hover:text-black transition-all duration-500 ease-in border-2 border-[#E4C590] rounded-none shadow-[inset_0_0_0_0_#E4C590] hover:shadow-[inset_0_-100px_0_0_#E4C590] active:scale-90">
+            <button className="relative mt-12 inline-block px-6 py-2 md:px-10 md:py-2 text-xs md:text-lg text-[#E4C590] hover:text-black transition-all duration-500 ease-in border-2 border-[#E4C590] rounded-none shadow-[inset_0_0_0_0_#E4C590] hover:shadow-[inset_0_-100px_0_0_#E4C590] active:scale-90">
               VIEW OUR MENU
             </button>
           </div>

@@ -74,8 +74,75 @@ const SpecialSelection = () => {
       }}
     >
       <header className="text-center mb-8">
-        <h2 className="text-lg uppercase tracking-widest text-gray-400">
+        <h2 className="text-lg  text-[#E4C590] uppercase tracking-widest ">
           Special Selection
+          <div className="w-32 mx-auto flex  mt-4 items-center justify-center">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 97.1 12.7"
+              enableBackground="new 0 0 97.1 12.7"
+              xmlSpace="preserve"
+              className="w-full"
+            >
+              <rect
+                x="31.6"
+                y="3"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 14.7528 -22.8645)"
+                fill="none"
+                stroke="#E3C48E"
+                strokeWidth="0.75"
+                strokeMiterlimit="10"
+                width="6.8"
+                height="6.8"
+              />
+              <rect
+                x="58.7"
+                y="3"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 22.699 -42.0484)"
+                fill="none"
+                stroke="#E3C48E"
+                strokeWidth="0.75"
+                strokeMiterlimit="10"
+                width="6.8"
+                height="6.8"
+              />
+              <polygon
+                fill="none"
+                stroke="#E3C48E"
+                strokeWidth="0.75"
+                strokeMiterlimit="10"
+                points="48.6,12.1 39.8,6.4 48.6,0.6 57.3,6.4 
+	"
+              />
+              <line
+                fill="none"
+                stroke="#E3C48E"
+                strokeWidth="0.75"
+                strokeMiterlimit="10"
+                x1="3.2"
+                y1="6.4"
+                x2="30.2"
+                y2="6.4"
+              />
+              <circle fill="#E3C48E" cx="2.6" cy="6.4" r="2.5" />
+              <line
+                fill="none"
+                stroke="#E3C48E"
+                strokeWidth="0.75"
+                strokeMiterlimit="10"
+                x1="93.9"
+                y1="6.4"
+                x2="66.9"
+                y2="6.4"
+              />
+              <circle fill="#E3C48E" cx="94.4" cy="6.4" r="2.5" />
+            </svg>
+          </div>
         </h2>
         <h1 className="text-4xl font-bold mt-2">Delicious Menu</h1>
         <div className="flex uppercase justify-center gap-8 mt-6">
@@ -93,8 +160,8 @@ const SpecialSelection = () => {
               {category}
               {activeCategory === category && (
                 <>
-                  <span className="absolute inset-x-0 bottom-[-1px] h-[2px] bg-yellow-500"></span>
-                  <span className="absolute inset-x-0 bottom-[-4px] h-[2px] bg-yellow-500"></span>
+                  <span className="absolute inset-x-0 bottom-[-1px] h-[2px] bg-[#E4C590]"></span>
+                  <span className="absolute inset-x-0 bottom-[-4px] h-[2px] bg-[#E4C590]"></span>
                 </>
               )}
             </a>
@@ -126,7 +193,7 @@ const SpecialSelection = () => {
                 <p className="text-gray-400">{item.description}</p>
                 <span className="text-green-400 font-bold">{item.price}</span>
                 {item.label && (
-                  <span className="ml-2 bg-yellow-500 text-black text-xs px-2 py-1 rounded">
+                  <span className="ml-2 bg-[#E4C590] text-black text-xs px-2 py-1 rounded">
                     {item.label}
                   </span>
                 )}

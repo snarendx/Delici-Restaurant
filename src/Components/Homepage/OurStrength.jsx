@@ -10,7 +10,7 @@ const OurStrength = () => {
       />
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
-          <h3 className="text-yellow-500 uppercase tracking-widest">
+          <h3 className="text-[#E4C590] uppercase tracking-widest">
             Why Choose Us
           </h3>
           <div className="w-32 mx-auto flex  mt-3 items-center justify-center">

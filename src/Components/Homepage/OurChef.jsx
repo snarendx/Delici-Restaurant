@@ -48,7 +48,7 @@ const OurChef = ({ name, title, image }) => {
       </div>
       <div className="p-4">
         <h3 className="text-lg font-bold">{name}</h3>
-        <p className="text-sm text-yellow-800 mb-4">{title}</p>
+        <p className="text-sm text-[#E4C590] mb-4">{title}</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
           doloribus.

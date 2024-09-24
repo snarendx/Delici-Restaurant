@@ -2,7 +2,15 @@ import React from "react";
 
 const MenuSection = () => {
   return (
-    <section className="bg-black text-white py-16 relative">
+    <section
+      className="bg-black text-white py-16 relative"
+      style={{
+        backgroundImage: `url('/MenuSection-bg.png')`,
+        backgroundSize: "500px",
+        backgroundPosition: "top right",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="container mx-auto text-center">
         <p className="text-[#E4C590] text-sm mb-2 tracking-widest">
           FLAVORS FOR ROYALTY

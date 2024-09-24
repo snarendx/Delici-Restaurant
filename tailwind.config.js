@@ -6,14 +6,16 @@ module.exports = withMT({
     extend: {
       // Add custom animations
       animation: {
-        'bounce-slow': 'bounce-slow 3s infinite',
+        "bounce-slow": "bounce-slow 3s infinite",
       },
       keyframes: {
-        'bounce-slow': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
+        "bounce-slow": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
+
+     
     },
   },
   plugins: [],

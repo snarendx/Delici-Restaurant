@@ -34,7 +34,7 @@ const WatchOurVideo = () => {
         <p className="text-4xl md:text-6xl font-medium mb-12">
           A modern restaurant with a menu that will make your mouth water.
         </p>
-        <span className="text-yellow-600">WILLIAM JOE - MASTER CHEF</span>
+        <span className="text-[#E4C590]">WILLIAM JOE - MASTER CHEF</span>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
           <div className="text-center flex flex-col items-center space-y-2">
             <div className="flex items-center gap-2">
